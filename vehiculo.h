@@ -1,10 +1,9 @@
 #ifndef _VE
 #define _VE
-
+#include <map>
 using namespace std;
 
-
-/* clase para las defensas de la base */
+enum Tipo {autos, camión, bus, ambulancia};
 
 class vehiculo{
     private:     
@@ -14,11 +13,11 @@ class vehiculo{
         string marcaModelo;
         int largo;
         int peso;
-        enum tipo {autos, camión, bus, ambulancia};
         
+
         int getLargo();
         int getPeso();
-        tipo getTipo();
+        Tipo getTipo();
 
 };
 
